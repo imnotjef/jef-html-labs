@@ -1,11 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hello, world</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #0a0a0a;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+    }
+
+    .label {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #555;
+      margin-bottom: 1.5rem;
+      animation: fadeUp 0.6s ease both 0.1s;
+    }
+
+    .title-wrap {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      animation: fadeUp 0.6s ease both 0.3s;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+    }
+
+    .cursor {
+      width: 2px;
+      height: 2.6rem;
+      background: #f0f0f0;
+      margin-left: 4px;
+      animation: blink 1s step-end infinite;
+    }
+
+    .sub {
+      font-size: 12px;
+      color: #444;
+      margin-top: 1.5rem;
+      animation: fadeUp 0.6s ease both 0.5s;
+    }
+
+    .meta {
+      margin-top: 3rem;
+      display: flex;
+      gap: 2rem;
+      animation: fadeUp 0.6s ease both 0.7s;
+    }
+
+    .meta-item {
+      text-align: center;
+    }
+
+    .meta-item span {
+      display: block;
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #444;
+      margin-bottom: 4px;
+    }
+
+    .meta-item strong {
+      font-size: 13px;
+      font-weight: 400;
+      color: #888;
+    }
+
+    .divider {
+      width: 1px;
+      background: #222;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-    
+
+  <p class="label">index.html</p>
+
+  <div class="title-wrap">
+    <h1>hello, world</h1>
+    <div class="cursor"></div>
+  </div>
+
+  <p class="sub">— let's build —</p>
+
+  <div class="meta">
+    <div class="meta-item">
+      <span>linguagem</span>
+      <strong>HTML</strong>
+    </div>
+    <div class="divider"></div>
+    <div class="meta-item">
+      <span>linhas</span>
+      <strong>1</strong>
+    </div>
+    <div class="divider"></div>
+    <div class="meta-item">
+      <span>bugs</span>
+      <strong>0</strong>
+    </div>
+  </div>
+
 </body>
 </html>
